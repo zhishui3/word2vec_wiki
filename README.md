@@ -23,7 +23,7 @@ wiki.zh.text.model.wv.syn0.npy    wiki.zh.text.vector
 
 
 5、测试训练好的模型
-# 注：因为gensim版本更新的问题，如果下面这个load有问题，可以使用新的接口：model = gensim.models.word2vec.Word2Vec.load(MODEL_PATH)
+注：因为gensim版本更新的问题，如果下面这个load有问题，可以使用新的接口：model = gensim.models.word2vec.Word2Vec.load(MODEL_PATH)
 In [3]: model = gensim.models.Word2Vec.load_word2vec_format("wiki.zh.text.vector", binary=False)
  
 model.most_similar("queen")
